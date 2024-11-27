@@ -27,11 +27,13 @@ public class Ejemplo02 {
             cadenaFinal = String.format("%s%.2f\n", cadenaFinal, nota);
             entrada.nextLine(); // limpieza de buffer
 
-            System.out.println("Ingrese (s) si desea salir del ciclo ");
+            System.out.println("Ingrese (s-si-yes) si desea salir del ciclo ");
             salida = entrada.nextLine(); // si
             //   si == s == >
-            if (salida.equals("s")) { // f
+            if (salida.equals("s") || salida.equals("si") 
+                    || salida.equals("yes")) { 
                 bandera = false;
+            // Se puede usar un Switch o un If
             }
             
         } while (bandera); // (bandera==true)
